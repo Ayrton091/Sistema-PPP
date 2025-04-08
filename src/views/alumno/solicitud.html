@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario PPP</title>
+    <link rel="stylesheet" href="solicitud.css">
+    <script src="js/jspdf.umd.min.js"></script>
+    <script src="js/jspdf.plugin.autotable.min.js"></script>
+    
+
+    
+</head>
+<body>
+    <div class="container">
+        <h2>Formulario de Prácticas Pre-Profesionales</h2>
+        <form id="formPPP">
+            <h3>Datos Generales</h3>
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" required>
+            
+            <label for="area_academica">Área Académica:</label>
+            <input type="text" id="area_academica" required>
+            
+            <label for="descripcion">Alcance y Descripción:</label>
+            <textarea id="descripcion" required></textarea>
+            
+            <h3>Datos de la Empresa</h3>
+            <label for="razon_social">Razón Social:</label>
+            <input type="text" id="razon_social" required>
+            
+            <label for="ruc">RUC:</label>
+            <input type="text" id="ruc" required>
+            
+            <label for="titular">Nombre del Titular:</label>
+            <input type="text" id="titular" required>
+            
+            <label for="sector">Sector:</label>
+            <select id="sector">
+                <option>Público</option>
+                <option>Privado</option>
+            </select>
+            
+            <label for="sitio_web">Sitio Web:</label>
+            <input type="url" id="sitio_web">
+            
+            <label for="departamento">Departamento:</label>
+            <input type="text" id="departamento" required>
+            
+            <label for="provincia">Provincia:</label>
+            <input type="text" id="provincia" required>
+            
+            <label for="distrito">Distrito:</label>
+            <input type="text" id="distrito" required>
+            
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" required>
+            
+            <label for="area_practicante">Área Asignada al Practicante:</label>
+            <input type="text" id="area_practicante" required>
+            
+            <label for="modalidad">Modalidad:</label>
+            <input type="text" id="modalidad" required>
+            
+            <h3>Responsable</h3>
+            <label for="responsable">Responsable del Área:</label>
+            <input type="text" id="responsable" required>
+            
+            <label for="cargo">Cargo:</label>
+            <input type="text" id="cargo" required>
+            
+            <label for="celular">Celular:</label>
+            <input type="text" id="celular" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="funciones">Funciones propuestas:</label>
+            <textarea id="funciones" required></textarea>
+            
+            <h3>Fechas</h3>
+            <label for="fecha_inicio">Fecha de Inicio:</label>
+            <input type="date" id="fecha_inicio" required>
+            
+            <label for="fecha_fin">Fecha de Fin:</label>
+            <input type="date" id="fecha_fin" required>
+            
+            <button type="button" id="generatePDF">Generar PDF</button>
+        </form>
+    </div>
+    <script src="solicitud.js"></script>
+</body>
+</html>

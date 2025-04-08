@@ -1,0 +1,36 @@
+body{
+    background-color: azure;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+}
+.form-container{
+    
+    height: 500px;
+    width: 500px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    padding: 15px 30px;
+    cursor:text;
+}
+button{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    padding: 15px 30px;
+    cursor: pointer;
+}
